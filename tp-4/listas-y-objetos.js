@@ -118,15 +118,15 @@ console.log("soloMayoresDeEdad()", soloMayoresDeEdad(listaPersonasEjemplo));
 function laPersonaMayor(listaDePersonas) {
     //
     if (listaDePersonas.length === 0) {
-        return null; // Devolvemos null si la lista está vacía
+        return null; 
     }
 
-    let personaMayor = listaDePersonas[0]; // Inicializamos con la primera persona de la lista
+    let personaMayor = listaDePersonas[0]; 
 
     for (let i = 1; i < listaDePersonas.length; i++) {
         const personaActual = listaDePersonas[i];
         if (personaActual.edad > personaMayor.edad) {
-            personaMayor = personaActual; // Si encontramos una persona mayor, la actualizamos
+            personaMayor = personaActual; 
         }
     }
 
