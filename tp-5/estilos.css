@@ -1,0 +1,10 @@
+.bold {
+    font-weight: bold;
+}
+.cursiva {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
