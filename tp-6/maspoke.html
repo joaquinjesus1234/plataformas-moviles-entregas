@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Pokémon</title>
+    <!-- Enlace a Bootstrap CSS (puedes usar el CDN de Bootstrap) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Enlace a Bootstrap JavaScript y jQuery (puedes usar el CDN de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Enlace al archivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-3">Más Pokemones</h1>
+        <button id="fetchPokemon" class="btn btn-primary">MOSTRAR POKEDEX</button>
+        <div class="row mt-3">
+            <div class="col-md-3" id="column1"></div>
+            <div class="col-md-3" id="column2"></div>
+            <div class="col-md-3" id="column3"></div>
+            <div class="col-md-3" id="column4"></div>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar detalles del Pokémon -->
+    <div class="modal" id="pokemonModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalles del Pokémon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <h2 id="pokemonName"></h2>
+                    <img id="pokemonImage" src="" alt="Imagen del Pokémon">
+                    <p>Altura: <span id="pokemonHeight"></span> decímetros</p>
+                    <p>Peso: <span id="pokemonWeight"></span> hectogramos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="archivo2.js"></script>
+</body>
+</html>
